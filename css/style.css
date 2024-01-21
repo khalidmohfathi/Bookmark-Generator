@@ -1,0 +1,104 @@
+::selection {
+   background-color: #fec260;
+}
+
+body {
+   font-family: 'PT Sans Caption', sans-serif;
+}
+
+main {
+   background-color: #f7ecde;
+   min-height: 100vh;
+}
+
+h1{
+   font-family: "Pacifico", cursive;
+   font-size: 50px;
+   width: fit-content;
+   margin: auto;
+   position: relative;
+   z-index: 0;
+}
+
+h1::before {
+   content: "";
+   position: absolute;
+   background-color: #fec260;
+   bottom: 30%;
+   left: 0;
+   height: 23%;
+   width: 100%;
+   transition: height 0.4s;
+   z-index: -1;
+}
+
+h1:hover::before {
+   height: 45%;
+}
+
+h2 {
+   font-family: 'Righteous', sans-serif;
+   font-size: 25px;
+   width: fit-content;
+   margin: auto;
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   word-spacing: 1;
+}
+
+.bookmark {
+   border-top: 2px dotted black;
+   border-bottom: 2px dotted black;
+}
+
+.bookmark button {
+   color: white;
+   background-color: #d1512d;
+   border-color: #d1512d;
+}
+
+.bookmark button:hover {
+   color: white;
+   background-color: #bb4120;
+   border-color: #a03315;
+}
+
+.btn_visit {
+   color: white;
+   background-color: #9eb23b;
+   border-color: #9eb23b;
+}
+
+.btn_visit:hover {
+   color: white;
+   background-color: #8a9e23;
+   border-color: #6e8018;
+}
+
+.btn_delete {
+   color: white;
+   background-color: #eb1d36;
+   border-color: #eb1d36;
+}
+
+.btn_delete:hover {
+   color: white;
+   background-color: #d30820;
+   border-color: #ba081d;
+}
+
+.form-control:focus {
+   border-color: #d99c39;
+   box-shadow: 0 0 0 4px #fec26055;
+}
+.modal_title{
+   font-family: 'Bree Serif', serif;
+}
+.circles span{
+   display: inline-block;
+   width: 20px ;
+   height: 20px ;
+   border-radius: 50%;
+   margin: 0px 3px;
+}
